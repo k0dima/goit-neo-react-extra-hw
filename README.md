@@ -22,4 +22,4 @@ npm run build
 - `src/components` holds small UI components; `Contact` receives props and has no Redux knowledge.
 - `src/pages` composes features and routes.
 
-The app uses the GoIT Contacts API at `https://connections-api.goit.global`.
+The app reads the GoIT Contacts API address from `.env` via `VITE_API_URL`.

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: 'https://connections-api.goit.global' })
+const api = axios.create({ baseURL: import.meta.env.VITE_API_URL })
 
 export const setAuthHeader = (token) => {
   api.defaults.headers.common.Authorization = `Bearer ${token}`
